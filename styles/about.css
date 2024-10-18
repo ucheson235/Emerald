@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary-color:#025048;
+    --secondary-color:#50C878;
+    --cart-color:#EF4444;
+    --dart-color: #252525;
+    --white-color: #fff;
+    --light-gray-color: #f2f2f2;
+    --site-max-width:1300px;
+    --off-white-color: #F1F4F1;
+}
+
+html {
+    font-size: 62.50%;
+}
+
+body{
+    /* background-color: var(--primary-color); */
+    font-family: 'Lora', serif;
+}
+
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 4;
+    background-color: var(--primary-color);
+}
+
+nav{
+    display: flex;
+    padding: 15px 0 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: var(--site-max-width);
+}
+
+nav .nav-logo a{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav .nav-logo a img{
+    max-width: 55px;
+    border-radius: 50%;
+
+}
+
+nav .nav-logo h2{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    gap:10px;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    font-weight: 50%;
+    color: var(--white-color);
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+
+
+}
+
+nav ul li a:hover{
+    color: var(--primary-color);
+    background-color: var(--light-gray-color);
+} 
+
+.menu{
+    display: none;
+}
+
+.cart-icon{
+    position: relative;
+}
+
+nav svg{
+   
+    text-align: center;
+    color: var(--white-color);
+}
+
+.cart-count{
+    background-color: var(--cart-color);
+    border-radius: 50%;
+    font-size:  1rem;
+    color: var(--white-color);
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: -0.7rem;
+    right: 1rem;
+}
+
+
+/* ---------------------------
+ about hero sections styles  */
+
+.hero{
+    background-color: var(--primary-color);
+    height: 70vh;
+    padding-top: 100px;
+}
+
+.hero-container{
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 50px;
+   
+
+}
+
+.hero-text{
+    align-self: center;
+    width: 50%;
+}
+
+.hero-text h1{
+    font-size: 3rem;
+    color: var(--white-color);
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--white-color);
+}
+
+.hero-img{
+   width: 50%;
+    height: 400px;
+}
+
+.hero-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 10px;
+}
+
+/* -----------------------
+stoye section styles */
+
+.story{
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 200px;
+}
+
+.story-img{
+    width: 50%;
+    height: 500px;
+   
+}
+
+.story-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.story-text{
+    width: 50%;
+    
+}
+
+.story-text p{
+    margin-top: 50px;
+    margin-bottom: 100px; 
+    font-size: 1.5rem;
+    line-height: 2;
+
+}
+
+.story-text h2{
+    color: var(--primary-color);
+    font-size: 2rem;
+
+}
+
+/* statment styels  */
+
+.statment {
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    margin-top: 100px ;
+}
+
+.statment h2{
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.statment p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.vision{
+    width: 50%;
+}
+
+.mission{
+    width: 50%;
+}
+/* 
+footer */
+
+footer{
+    padding-top: 100px;
+  }
+
+  .footer{
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+  }
+
+  .footer h2{
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+
+  .footer ul{
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    list-style: none;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .icon {
+    font-size: 2rem; 
+    color: #4C5251; 
+  }
+  
+  .icon:hover {
+    color: #000; 
+  }
+
+  .strength-line {
+    width: 100%; 
+    height: 1px;
+    background-color: var(--primary-color); 
+    margin: 10px auto;
+    border-radius: 10px; 
+  }
+  
+  footer p {
+    text-align: center;
+    margin: 30px;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+  }
+
+
+  @media screen and (max-width:1024px){
+    .hero-text p{
+        font-size: 1rem;
+
+    }
+
+   
+    .story-text p{
+        font-size: 1rem;
+    }
+
+    .statment p{
+        font-size: 1rem;
+    }
+
+    footer{
+        padding: 20px;
+    }
+  }
+
+
+  @media screen and (max-width:576px){
+    nav .nav-logo a img{
+        max-width: 45;
+    }
+
+    nav .nav-logo h2{
+        font-size: 2rem;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    
+
+    .hero-container{
+        display: block;
+       
+    }
+
+    .hero-img{
+        width: 100%;
+        height: 350px;
+    }
+
+    .hero-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-text{
+        width: 100%;
+        margin-bottom: 20px;
+        padding-top: 0;
+    }
+
+    .hero{
+        padding-top: 50px;
+
+    }
+
+    .story{
+        padding-top: 20px;
+        display: block;
+    }
+
+    .story-img{
+        height: 300px;
+        width: 100%;
+       
+    }
+
+    .story-text{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .statment{
+        display: block;
+    }
+
+    .vision{
+        width: 100%;
+    }
+
+    .mission{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .footer ul{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+}

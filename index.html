@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" type="image/x-icon" href="./assest/logo.webp">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Emerald</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="./assest/logo.webp" alt="logo">
+                    <h2>Emerald</h2>
+
+                </a>
+
+            </div>
+
+            <div class="menu">
+
+                <i class="menu-btn  fa fa-bars"></i>
+
+            </div>
+           
+
+           
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./about.html">About Us </a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                
+               
+
+            </ul>
+            <!-- cart icon -->
+         <div class="cart-icon">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            #
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"
+            />
+            <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+          </svg>
+          <small id="cart-count" class="cart-count">0</small>
+
+
+         </div>
+
+
+        </nav>
+    </header>
+
+    <!-- hero sections  -->
+     <section >
+
+        <div class="hero">
+            <div class="hero-container">
+                <div class="hero-welcome">
+                    <h1>WELCOME TO EMERALD</h1>
+                    <h2> Where Shopping Made Easy</h2>
+                </div>
+                <div class="hero-section">
+                    <div class="hero-text">
+                        <h1>Elevate Your Space with <br> Emerald Elegance</h1>
+                        <h2>Where shopping made easy</h2>
+                        <button>SHOP NOW</button>
+                       
+        
+        
+                    </div>
+                    <div class="hero-img">
+                        <img src="./assest/hero-img.jpg" alt="Plant in a cup" class="plant-img">
+                        <img src="./assest/hero-02.jpg" alt="Person with pots" class="person-img">
+    
+                    </div>
+
+                </div>
+            </div>
+          </div>
+          
+
+
+
+       </div>
+
+      
+     </section>
+
+     <!-- mid section with moving carouel  -->
+      <section>
+       <div class="mid">
+        <div class="mid-container">
+            <div class="mid-img" >
+                <img id="slider-image" src="./assest/bundle-of-bracelets-img3.jpg" alt="" class="carousel-image">
+                
+                
+                <button class="carousel-btn prev" onclick="prevSlide()">
+                    &#10094;
+                </button>
+                <button class="carousel-btn next" onclick="nextSlide()">
+                    &#10095;
+                </button>
+            </div>
+            
+            <div class="mid-text">
+                <h1>Our Products ​</h1>
+                <p>Explore our exquisite collection of  
+                 treasures From dinnerware to decor, each piece in our product range 
+                 is a testament to quality, style, and the timeless beauty.</p>
+                 <button>SHOP NOW</button>
+
+            </div>
+
+        </div>
+
+       </div>
+
+      </section>
+
+      <!-- products sections  -->
+       <section>
+        <div class="product-main">
+            <h1>Our Products Category</h1>
+            <div class="search-div">
+               <input type="text" id="search" class="search-input" placeholder="search product...">
+               <svg
+                class="search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+            </svg>
+
+            </div>
+            <div id="products-wrapper" class="products-wrapper">
+               
+                <!-- our product -->
+                
+            </div>
+            
+
+        </div>
+
+       </section>
+       <section>
+        <div class="testimonial">
+            <div class="testimonial-div">
+                <h3>TESTIMONIAL</h3>
+               <h1>What Our Customers Say</h1>
+               <div class="testimonial-text">
+                  <div class="testimonial-card">
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                        <span class="star">&#9734;</span>
+                        <span class="star">&#9734;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <p>Click edit button to change this text. Lorem ipsum dolor sit <br>
+                         amet, consectetur adipiscing elit. Ut elit tellus, luctus nec <br>
+                          ullamcorper mattis, pulvinar dapibus leo.
+                    </p>
+                    <div class="testimonial-img">
+                        <img src="./assest/testimonial-img1.jpg" alt="testimonial image">
+                        <h2>John James <br> <span>Business Man</span></h2>
+                       
+
+                    </div>
+
+
+                  </div>
+                  <div class="testimonial-card">
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                        <span class="star">&#9734;</span>
+                        <span class="star">&#9734;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                    <p>Click edit button to change this text. Lorem ipsum dolor sit <br>
+                         amet, consectetur adipiscing elit. Ut elit tellus, luctus nec <br>
+                          ullamcorper mattis, pulvinar dapibus leo.
+                    </p>
+                    <div class="testimonial-img">
+                        <img src="./assest/testimonial-img2.jpg" alt="testimonial image">
+                        <h2>Vik Fee <br> <span>Fashion Designer</span></h2> 
+                       
+
+                    </div>
+
+
+                  </div>
+
+               </div>
+
+            </div>
+
+        </div>
+
+       </section>
+
+       <section>
+        <div class="world">
+            <div class="world-img">
+                <img src="./assest/world-img.jpg" alt="">
+            </div>
+            <div class="world-text">
+                <h1>Discover the world of <br> 
+                    Quality Product Where <br>
+                     Shopping Made Easy
+                </h1>
+                <button>SHOP NOW</button>
+
+            </div>
+
+        </div>
+
+       </section>
+       <footer>
+         <div class="footer">
+
+            <h2>Emerald</h2>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>SHOP</li>
+                <li>CONTACT</li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+         </div>
+         <div class="strength-line"></div>
+         <p>© 2024 Ucheson</p>
+
+       </footer>
+
+    
+
+   
+    
+
+
+    <script src="./script/index.js"></script>
+</body>
+</html>
